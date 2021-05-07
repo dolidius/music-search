@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+
+    @media(max-width: 1200px){
+        font-size: 9px;
+    }
+
+    @media(max-width: 900px){
+        font-size: 8px;
+    }
+
+    @media(max-width: 600px){
+        font-size: 7px;
+    }
+
+}
+
+body {
+    background: $purple-main;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+}

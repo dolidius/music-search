@@ -1,0 +1,145 @@
+.detailsModal {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0, 0.9);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+
+    &__container {
+        width: 40%;
+        height: 70%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        padding: 6rem 8rem;
+        border-radius: 4px;
+        position: relative;
+        z-index: 101;
+
+        @media(max-width: 1500px) {
+            width: 60%;
+        }
+
+        @media(max-width: 1000px) {
+            width: 75%;
+        }
+    }
+
+    &__error {
+        color: #9A0404;
+        font-size: 2.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__close {
+        position: absolute;
+        top: 2.5rem;
+        right: 3rem;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+
+    &__header {
+        display: flex;
+
+        @media(max-width: 450px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__art {
+        width: 12rem;
+
+        @media(max-width: 700px) {
+            width: 10rem;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        font-size: 1rem;
+
+        @media(max-width: 700px) {
+            font-size: .8rem;
+        }
+
+        @media(max-width: 450px) {
+            margin-top: 2rem;
+        }
+
+        &--main {
+            font-size: 3em;
+
+           
+        }
+
+        &--secondary {
+            font-size: 2em;
+        }
+
+        &--th {
+            margin-top: .5rem;
+            font-size: 1.4em;
+        }
+
+        &--frth {
+            font-size: 1.4rem;
+        }
+
+    }
+
+    &__songList {
+        font-size: 2.2rem;
+        list-style-type: none;
+        font-weight: bold;
+        margin-top: 3rem;
+        letter-spacing: 1px;
+        overflow-y: auto;
+
+        @media(max-width: 700px) {
+            font-size: 1.8rem;
+        }
+
+        @media(max-width: 400px) {
+            font-size: 1.5rem;
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+          
+        &::-webkit-scrollbar-track {
+            background: #888;
+            border-radius: 10px;
+        }
+          
+        &::-webkit-scrollbar-thumb {
+            background: #424242;
+        }
+          
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+    }
+
+    &__song:not(:first-child) {
+        margin-top: .4rem;
+    }
+
+}

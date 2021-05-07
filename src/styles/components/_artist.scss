@@ -1,0 +1,37 @@
+.artist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33% - 4rem);
+    margin: 2.6rem 2rem;
+    cursor: pointer;
+
+    @media(max-width: 500px) {
+        width: calc(50% - 4rem);
+    }
+
+    @media(max-width: 300px) {
+        width: calc(100% - 4rem);
+    }
+
+    &__name {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: $light;
+        font-size: 1.85rem;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+      
+        &--secondary {
+            font-size: 1.4rem;
+            color: $light-darker;
+        }
+
+        &:hover {
+            color: $light-darker;
+        }
+
+    }
+
+}

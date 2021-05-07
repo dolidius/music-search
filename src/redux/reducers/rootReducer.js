@@ -1,9 +1,11 @@
 import { combineReducers } from "redux";
 
-import counterReducer from "../reducers/counter";
+import searchReducer from '../reducers/search';
+import albumReducer from '../reducers/album';
 
 const rootReducer = combineReducers({
-    counter: counterReducer,
+    searchData: searchReducer,
+    album: albumReducer
 });
 
 export default rootReducer;

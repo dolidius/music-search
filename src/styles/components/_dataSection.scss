@@ -1,0 +1,30 @@
+.dataSection {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(max-width: 1000px) {
+        &:not(:first-child) {
+            margin-top: 10rem;
+        }
+    }
+
+    &__title {
+        color: white;
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        letter-spacing: 3px;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+}
